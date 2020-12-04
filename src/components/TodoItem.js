@@ -6,8 +6,8 @@ import "./TodoItem.css";
 import checkImg from "../img/check.svg";
 import unCheckImg from "../img/uncheck.svg";
 
-class TodoItem extends Component {
-  render() {
+function TodoItem (props) {
+
     const { item, onClick } = this.props;
     let url = unCheckImg;
     if (item.isComplete) {
@@ -26,8 +26,6 @@ class TodoItem extends Component {
       </div>
     );
   }
-}
-
 TodoItem.propTypes={
   item: PropTypes.shape({
     isComplete: PropTypes.bool.isRequired,
