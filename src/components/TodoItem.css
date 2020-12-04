@@ -1,0 +1,27 @@
+.TodoItem{
+    font-weight: 300;
+    font-size: 26px;
+    color: #4d4d4d;
+    display: flex;
+    border-bottom: 1px solid #444444;
+}
+.TodoItem > p{
+    margin: 0 0 0 10px;
+    padding: 10px 5px;
+    
+}
+.TodoItem-complete p {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.TodoItem-complete{
+    border-bottom: 1px solid #bebebb;
+}
+p{
+    width: 100%;
+}
+img{
+    padding: 10px;
+    cursor: pointer;
+
+}
